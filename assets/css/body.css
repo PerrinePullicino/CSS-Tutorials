@@ -1,0 +1,66 @@
+
+/**
+ * Overall page width styling
+ */
+.wrapper {
+    width: 1000px !important;
+}
+
+@media(max-width: 1000px) {
+    .wrapper {
+        width: 100vw !important;
+    }
+}
+
+/**
+ * Code block styling
+ */
+div.language-plaintext.highlighter-rouge {
+    margin-left: 25px !important;
+}
+
+.markdown-body pre {
+    width: min-content !important;
+    min-width: 250px !important;
+
+    padding: 15px !important;
+    border: 2px solid #557398;
+}
+
+/**
+ * Inline code styling
+ */
+code.language-plaintext.highlighter-rouge {
+    color: rgb(255, 133, 51) !important;
+}
+
+/**
+ * Table styling
+ */
+
+table {
+    margin-left: 10px !important; 
+}
+
+table tbody {
+    border: 2px solid #557398;
+}
+
+/**
+ * Current section styling
+ */
+
+.current-section .name {
+    text-align: center;
+    font-size: 18px;
+}
+
+pre.lines {
+    display: none !important;
+}
+
+@media(orientation: portrait) {    
+    .current-section .name {
+        font-size: 12px;
+    }
+}
