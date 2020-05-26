@@ -1,8 +1,4 @@
-body {
-    background-color: #3b3b3b;
-}
-
-.container {
+.transitions__container {
     display: flex;
     flex-wrap: wrap;
 }

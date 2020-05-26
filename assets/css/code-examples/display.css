@@ -1,8 +1,4 @@
-body {
-    background-color: #3b3b3b;
-}
-
-.container {
+.display__container {
     background-color: lightyellow;
     border: 1px solid red;
     padding: 2px;
