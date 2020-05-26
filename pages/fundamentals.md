@@ -153,6 +153,7 @@ That being said, this property is incredibly useful and more importantly it is w
 - `relative`: It's actually not far from what `static` does, but it allows you to manipulate the `top`, `left`, `right` and `bottom` properties of the `relative` element... Crucially (and by opposition to `absolute`) the space for the element is still reserved and the `top`/`left`... coordinates start from that reserved space. In other words, you place the element statically, *then* you offset it. This is overall a useful property that is actually rather **bad to use on its own** as it becomes increasingly hard to position your elements without conflicts.
 - `absolute`: This completely removes the element from the flow (! different from `relative`). You still manipulate `top`/`left` and so on BUT they now come from a different referential - a parent container that it references. That parent is the closest parent *that is not static* it can find. Do note that if you do not specify any `relative` or `sticky`,etc... parent, this will default to the `<body>`.
 
+
 ## Display
 
 - `block`: A `<div>`'s default display. An element with `display: block;` will take the entire width given to it. (It essentially forces a new line above and below the element)
@@ -160,6 +161,13 @@ That being said, this property is incredibly useful and more importantly it is w
 - `inline-Block`: An `<image>` default display. As an `inline` element, it will also try to take the least amount of space possible, but this time you can set the width and height of the element (inline elements can't have a width and height).
 - `none`: Makes the content disappear (acts as if it doesn't exist - the space isn't reserved, it is not simply invisible)
 - `flex` and `grid`: Special ones, with a bunch of characteristics, described later.
+
+
+<iframe id="displayStyleExamplesIframe"
+    title="Display style Examples"
+    scrolling="no"
+    src="https://perrinepullicino.github.io/CSS-Tutorials/code-examples/display.html">
+</iframe>
 
 ## Pseudo-classes
 
