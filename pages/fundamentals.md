@@ -162,12 +162,15 @@ That being said, this property is incredibly useful and more importantly it is w
 - `none`: Makes the content disappear (acts as if it doesn't exist - the space isn't reserved, it is not simply invisible)
 - `flex` and `grid`: Special ones, with a bunch of characteristics, described later.
 
+Code example to showcase the Display property:
 
-<iframe id="displayStyleExamplesIframe"
-    title="Display style Examples"
-    scrolling="no"
-    src="https://perrinepullicino.github.io/CSS-Tutorials/code-examples/display.html">
-</iframe>
+<div class="codeExampleContainer">
+    <div class="display__container">Block</div>
+    <div class="display__container inlineElement">Inline</div>
+    <div class="display__container inlineBlockElement">InlineBlock with specific width set</div>
+    <div class="display__container inlineElement">Inline</div>
+    <div class="display__container">Block</div>
+</div>
 
 ## Pseudo-classes
 

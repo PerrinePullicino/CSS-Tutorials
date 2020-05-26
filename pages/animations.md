@@ -66,9 +66,11 @@ There are four cut options given to you to parametrize your transition speed via
 
 This provides an example of those properties in action when you hover over those boxes:
 
-
-<iframe id="transitionStyleExamplesFrame"
-    title="Transition Examples"
-    scrolling="no"
-    src="https://perrinepullicino.github.io/CSS-Tutorials/code-examples/transitions.html">
-</iframe>
+<div class="codeExampleContainer">
+    <div class="transitions__container">
+        <div style="width: 50%;"><div class="toAnimate linear">Linear</div></div>
+        <div style="width: 50%;"><div class="toAnimate ease-in">Ease-in</div></div>
+        <div style="width: 50%;"><div class="toAnimate ease-out">Ease-out</div></div>
+        <div style="width: 50%;"><div class="toAnimate ease-in-out">Ease-in-out</div></div>
+    </div>
+</div>
