@@ -20,8 +20,9 @@ div.language-plaintext.highlighter-rouge {
 }
 
 .markdown-body pre {
-    width: min-content !important;
     min-width: 250px !important;
+
+    margin-right: 0px !important;
 
     padding: 15px !important;
     border: 2px solid #557398;
