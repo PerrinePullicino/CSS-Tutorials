@@ -1,0 +1,36 @@
+.box-model__example__color-boxes {
+    width: 150px;
+    height: 150px;
+
+    padding:25px;
+    background-image: linear-gradient(rgb(136, 197, 218), rgb(136, 197, 218)), 
+        linear-gradient(rgb(120, 211, 120), rgb(120, 211, 120)),
+        linear-gradient(rgb(255, 191, 16), rgb(255, 191, 16));
+    background-clip: content-box, padding-box, border-box;
+    border: 30px solid transparent;
+}
+
+.box-model__example__color-boxes--one {
+    margin: 40px;
+}
+.box-model__example__color-boxes--two {
+    margin: 40px;
+}
+
+
+
+.box-model__example__color-boxes__margin-collapsing--one {
+    margin-bottom: 40px;
+}
+
+.box-model__example__color-boxes__margin-collapsing--two {
+    margin-top: 40px;
+}
+
+.box-model__example__color-boxes__margin-not-collapsing--one {
+    margin-right: 80px;
+}
+
+.box-model__example__color-boxes__margin-not-collapsing--two {
+    margin-left: 90px;
+}
