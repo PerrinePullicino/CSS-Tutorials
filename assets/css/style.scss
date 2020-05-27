@@ -6,12 +6,15 @@
 @import "body.css";
 
 //code examples
+@import "code-examples/box-model.css";
 @import "code-examples/display.css";
 @import "code-examples/animations-transitions.css";
 @import "code-examples/animations-keyframes.css";
+@import "code-examples/flexbox-basics.css";
 
 .codeExampleContainer {
     padding: 5px;
-    background-color: #3b3b3b;
+    background-color: #747474;
+    border: 2px solid #333;
 }
 
