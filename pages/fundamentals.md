@@ -25,7 +25,7 @@ CSS allows you to target an element to style through 3 main types of selectors:
 - The ID of the element
 
 The **type** of the element corresponds to its `Html Tag`. Think `div`, `a`, `label` and so on. It looks like this:
-```
+```css
 div {
     background-color: red;
 }
@@ -34,13 +34,13 @@ div {
 The **class** of an element is a reserved HTML attribute you've added to it. It's meant to be reused throughout your code and it is advised to regroup functionalities in small CSS classes. Applying **multiple classes** to your components is a good practice and allows for more understandable CSS. Think about role separation.
 Styling through a Class looks like this:
 
-```
+```html
 <div class="redDiv">
     <label>A label</label>
 </div>
 ```
 
-```
+```css
 .redDiv {
     background-color: red;
 }
@@ -48,13 +48,13 @@ Styling through a Class looks like this:
 
 The **ID** of an element is also a reserved HTML attribute you've added to it. But contrary to a class, its usage should be unique. IDs are a good way to single out a component that would otherwise only get its class' style applied to it.
 
-```
+```html
 <div id="myDivToTheRight">
     <label>A label</label>
 </div>
 ```
 
-```
+```css
 #myDivToTheRight {
     position: absolute;
     right: 0;
@@ -92,13 +92,13 @@ Specificity(Type) < Specificity(Class) < Specificity(Id) < Specificity(Inline)
 ```
 So having the following code:
 
-```
+```html
 <div id="redDiv">
     <label>A label</label>
 </div>
 ```
 
-```
+```css
 #redDiv {
     background-color: red;
 }
@@ -111,13 +111,13 @@ will result in a red div.
 
 Now when there actually is a specifity level greater than 0 (nested selectors), the one with the most steps will take over the others ones. Intuitively, it means that if you have the following code:
 
-```
+```html
 <div id="myDiv">
     <label class="redLabel">A label</label>
 </div>
 ```
 
-```
+```css
 label.redLabel {
     background-color: green;
 }
@@ -140,7 +140,7 @@ A couple keywords (there are two more, go and have a look) you might want to kno
 
 **Don't. Use. This.** Using the `!important` keyword to solve your specificity conflicts is an admission of weakness and should be cause for a rejection of any PR. It's usually a sure way of demonstrating that you do not understand how the CSS cascade actually works.
 
-The only legit way in the current codebase to use `!important` is if you're dealing with external CSS code (from a React component, for example), which forces you to bypass its own `!important` rules.
+Legit reasons to use the `!important` keyword do arise however if you're dealing with external CSS code (from a React component, for example, or a Jekyll theme...), and where recreating the level of nesting needed for the style to apply would be a waste of time and could end up not being what you exactly need anyway.
 
 
 ## Position
@@ -178,7 +178,7 @@ Pseudo-classes tell you something about the state that your element is currently
 
 Pseudo-classes are used like this:
 
-```
+```css
 .myClass {
     background-color: red;
     font-size: 20px;
@@ -216,7 +216,7 @@ and/or any number of *features* such as `width`, `orientation` and so on.`
 
 You can combine types and features this way:
 
-```
+```css
 @media print and (max-width: 500px) {
     //
 }
@@ -224,13 +224,13 @@ You can combine types and features this way:
 
 The important syntax points to note are that you can express an AND condition and an OR condition (respectively) via code such as:
 
-```
+```css
 @media(max-width: 500px) and (min-width: 200px) {
     //
 }
 ```
 and
-```
+```css
 @media(max-width: 500px), (min-width: 200px) {
     //
 }
@@ -244,8 +244,10 @@ You can also for convenience purposes use a `not` keyword that allows you to inv
 ### `calc()`
 
 Because maths is too hard, and also because it's useful. In that order. The `calc()` function allows you to compute calculations. You'll often find it inline with your CSS properties, like so:
-```
-width: calc(100% - 30px);
+```css
+.class {
+    width: calc(100% - 30px);
+}
 ```
 but giving the calculation meaning through a named variable is absolutely possible.
 As you can see in the example, the best use of `calc()` comes from the fact that you can mix and match units!
