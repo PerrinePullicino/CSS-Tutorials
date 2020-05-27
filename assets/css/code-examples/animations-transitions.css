@@ -1,0 +1,69 @@
+/**
+ * Example transition on end point rather than start point
+ */
+.transitions__endpoint-example__toAnimate {
+    width: 100px;
+    height: 50px;
+    background: red;
+
+}
+.transitions__endpoint-example__toAnimate:hover {
+    width: 100%;
+    background: green;
+    transition-duration: 2000ms; /*Transition on end point*/
+}
+
+
+.transitions__startpoint-example__toAnimate {
+    width: 100px;
+    height: 50px;
+    background: red;
+    transition-duration: 2000ms; /*Transition on start point*/
+}
+.transitions__startpoint-example__toAnimate:hover {
+    width: 100%;
+    background: green;
+}
+
+
+/**
+ * Timing functions example
+ */
+.transitions__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toAnimate {
+    width: 85px;
+    height: 50px;
+    margin-bottom: 10px;
+
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: 2px solid #557398;
+
+    transition-duration: 2500ms;
+}
+
+.toAnimate:hover {
+    background-color: lightgreen;
+    width: 100%;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}

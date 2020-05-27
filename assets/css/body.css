@@ -15,17 +15,15 @@
 /**
  * Code block styling
  */
-div.language-plaintext.highlighter-rouge {
-    margin-left: 25px !important;
-}
-
 .markdown-body pre {
     min-width: 250px !important;
 
     margin-right: 0px !important;
+    margin-left: 0px !important;
 
     padding: 15px !important;
     border: 2px solid #557398;
+    background-color: rgb(56, 59, 62) !important;
 }
 
 /**

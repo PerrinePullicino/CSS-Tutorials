@@ -5,13 +5,10 @@
 
 @import "body.css";
 
-//pages
-@import "pages/animations.css";
-@import "pages/fundamentals.css";
-
 //code examples
 @import "code-examples/display.css";
-@import "code-examples/transitions.css";
+@import "code-examples/animations-transitions.css";
+@import "code-examples/animations-keyframes.css";
 
 .codeExampleContainer {
     padding: 5px;
