@@ -1,0 +1,30 @@
+/**
+ * Keyframes example
+ */
+.transitions__keyframes-example__toAnimate {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    animation-name: movesToRight;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movesToRight {    
+  from {
+    margin-left: 0%;
+  }
+  50% {
+    background-color: red;    
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+
+
+
